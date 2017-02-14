@@ -13,7 +13,8 @@ Input "Please type a word or a phrase ...", txt$
 For f = 1 to len(txt$)
   t$ = mid$(txt$, f, 1)
   if instr(validString$, upper$(t$), 1) <> 0 then
-				 if instr("AEIOU", upper$(t$), 1) <> 0 then
+					
+      if instr("AEIOU", upper$(t$), 1) <> 0 then
         r$ = r$ + t$
         goto weiter
       Endif
